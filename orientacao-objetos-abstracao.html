@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script>
+    //modelo do objeto
+     class ContaBancaria {
+        //agencia
+        //numeroConta
+        //saldo
+        //limite
+        constructor() {
+            //this. conecta o atributo ao objeto
+            this.agencia = 1075
+            this.numeroConta = 8351125
+            this.saldo = 50
+            this.limite = 450
+        }
+
+        depositar(valorDeposito) {
+            this.saldo += valorDeposito
+        }
+
+        sacar(valorSaque) {
+            this.saldo -= valorSaque
+        }
+
+        consultarSaldo() {
+            return this.saldo
+        }
+     }
+
+     //new indica pro interpretador JS que queremos usar uma classe como objeto dentro do código
+     let x = new ContaBancaria()
+     let y = new ContaBancaria()
+
+     //o ponto (.) serve para chamar métodos e atributos da classe
+     console.log(x.consultarSaldo())
+     x.depositar(100)
+     console.log(x.consultarSaldo())
+     x.sacar(50)
+     console.log(x.consultarSaldo())
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

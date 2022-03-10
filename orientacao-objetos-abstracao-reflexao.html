@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script>
+
+        //um software de marcenaria
+        //cadeira e sofá
+
+        //paradigma procedural
+
+        //cadeira
+        // let qtdPernas = 4
+        // let giratoria = false
+        // let cor = 'azul'
+
+        // //array de cadeiras
+        // let cadeiras = Array()
+
+        // cadeiras[0] = Array()
+        // cadeiras[0]['qtdPernas'] = 4
+        // cadeiras[0]['giratoria'] = false
+        // cadeiras[0]['cor'] = 'azul'
+
+        // cadeiras[1] = Array()
+        // cadeiras[1]['qtdPernas'] = 1
+        // cadeiras[1]['giratoria'] = true
+        // cadeiras[1]['cor'] = 'vermelha'
+
+        // // console.log(cadeiras)
+
+        // function girar_cadeira(indice) {
+        //     if (cadeiras[indice]['giratoria'] === true){
+        //         console.log('girou')
+        //     } else {
+        //         console.log('cadeira não é giratória')
+        //     }
+        // }
+
+        // girar_cadeira(1)
+
+        // function addCadeira(qtdPernas, giratoria, cor) {
+        //     let cadeira = Array()
+
+        //     cadeiras['qtdPernas'] = qtdPernas
+        //     cadeiras['giratoria'] = giratoria
+        //     cadeiras['cor'] = cor
+
+        //     cadeiras.push(cadeira)
+        // }
+
+        // addCadeira(3, 'false', 'verde')
+
+        // console.log(cadeiras)
+
+        //paradigma de OO
+        class Cadeira {
+            constructor(qtdPernas, giratoria, cor) {
+                this.qtdPernas = qtdPernas
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira() {
+                if (this.giratoria === true) {
+                    console.log('girou')
+                } else {
+                    console.log('cadeira não é giratória')
+                }
+            }
+        }
+
+        let cadeiras = Array()
+
+        cadeiras.push(new Cadeira(4, false, 'azul'))
+        cadeiras.push(new Cadeira(1, true, 'vermelha'))
+
+        console.log(cadeiras)
+
+    
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
